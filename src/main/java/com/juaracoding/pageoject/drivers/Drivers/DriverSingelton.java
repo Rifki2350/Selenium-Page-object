@@ -12,13 +12,11 @@ public class DriverSingelton {
 	private static DriverSingelton instance = null;
 	private static WebDriver driver;
 	
-	public DriverSingelton(String driver) {
-		// TODO Auto-generated constructor stub
+	private DriverSingelton(String driver) {
+		instantiate(driver);
 	}
-	private void DriverSingleton(String driver) {
-		instatiate(driver);
-	}
-	public WebDriver instatiate(String strategy) {		
+	
+	public WebDriver instantiate(String strategy) {		
 		DriverStrategy driverStrategy = DriverStrategyImplementer.chooseStrategy(strategy);
 		driver = driverStrategy.setStrategy();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-23T11:00:18 SGT" name="Default suite" finished-at="2022-08-23T11:00:18 SGT" duration-ms="243">
+  <suite started-at="2022-08-24T00:03:56 SGT" name="Default suite" finished-at="2022-08-24T00:03:56 SGT" duration-ms="200">
     <groups>
     </groups>
-    <test started-at="2022-08-23T11:00:18 SGT" name="Default test" finished-at="2022-08-23T11:00:18 SGT" duration-ms="243">
-      <class name="com.juaracoding.pageoject.TestLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="setUp" finished-at="2022-08-23T11:00:18 SGT" duration-ms="38" status="FAIL">
+    <test started-at="2022-08-24T00:03:56 SGT" name="Default test" finished-at="2022-08-24T00:03:56 SGT" duration-ms="200">
+      <class name="com.juaracoding.TestUjian3.TestUjian3">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="setUp" finished-at="2022-08-24T00:03:56 SGT" duration-ms="33" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null
-at com.juaracoding.pageoject.TestLogin.setUp(TestLogin.java:25)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null
+at com.juaracoding.TestUjian3.TestUjian3.setUp(TestUjian3.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -45,18 +45,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageobject()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="pageobject" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661223618940" status="SKIP">
+        <test-method is-config="true" signature="pageobject()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="pageobject" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661270636525" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageobject -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="testInvalidLogin" finished-at="2022-08-23T11:00:18 SGT" duration-ms="0" status="SKIP">
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="testInvalidLogin" finished-at="2022-08-24T00:03:56 SGT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null
-at com.juaracoding.pageoject.TestLogin.setUp(TestLogin.java:25)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null
+at com.juaracoding.TestUjian3.TestUjian3.setUp(TestUjian3.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -87,18 +87,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="pageobject()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="pageobject" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661223618969" status="SKIP">
+        <test-method is-config="true" signature="pageobject()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="pageobject" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661270636543" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageobject -->
-        <test-method signature="testValidLogin()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="testValidLogin" finished-at="2022-08-23T11:00:18 SGT" duration-ms="0" status="SKIP">
+        <test-method signature="testValidLogin()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="testValidLogin" finished-at="2022-08-24T00:03:56 SGT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.pageoject.TestLogin.driver" is null
-at com.juaracoding.pageoject.TestLogin.setUp(TestLogin.java:25)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.juaracoding.TestUjian3.TestUjian3.driver" is null
+at com.juaracoding.TestUjian3.TestUjian3.setUp(TestUjian3.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -129,11 +129,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.juaracoding.pageoject.TestLogin@3c130745]" started-at="2022-08-23T11:00:18 SGT" name="closeBrowser" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661223618989" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.juaracoding.TestUjian3.TestUjian3@3c130745]" started-at="2022-08-24T00:03:56 SGT" name="closeBrowser" finished-at="1970-01-01T07:30:00 SGT" duration-ms="-1661270636562" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.juaracoding.pageoject.TestLogin -->
+      </class> <!-- com.juaracoding.TestUjian3.TestUjian3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

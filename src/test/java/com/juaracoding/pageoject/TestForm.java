@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.juaracoding.pageobject.pages.Modal;
+import com.juaracoding.pageobject.pages.SampleForm;
 import com.juaracoding.pageoject.drivers.Drivers.DriverSingelton;
 
 public class TestForm {
@@ -25,12 +26,17 @@ public class TestForm {
 
 	@BeforeMethod
 	public void pageobject() {
-		sampleForm = new SampleForm();
+		sampleform = new SampleForm();
 	}
 	
 	@Test
 	public void testForm() {
-	
+	sampleform.pilihGender(0);
+	sampleform.pilihGender(1);
+	sampleform.pilihGender(2);
+	sampleform.pilihHobbies(0);
+	sampleform.pilihHobbies(1);
+	sampleform.pilihHobbies(2);
 	}
 	
 	@AfterClass
@@ -45,6 +51,7 @@ public class TestForm {
 			// TODO: handle exception
 		e.printStackTrace();
 		}
-	
-	
+
+	}
 }
+
