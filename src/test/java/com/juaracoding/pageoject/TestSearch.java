@@ -1,5 +1,6 @@
 package com.juaracoding.pageoject;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,56 +10,43 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.juaracoding.pageobject.Postest18.PostTestAdd;
+import com.juaracoding.pageobject.Postest18.PostTestSearch;
+import com.juaracoding.pageobject.pages.LoginPagee;
 import com.juaracoding.pageobject.pages.SampleAlert;
 import com.juaracoding.pageoject.drivers.Drivers.DriverSingelton;
 
 public class TestSearch {
 
 	public static WebDriver driver;
-	private SampleSearch sampleSearch;
+	private PostTestAdd Search;
+	
 	
 	@BeforeClass
 	public void setUp() {
 		DriverSingelton.getInstance("Chrome");
 		driver = DriverSingelton.getDriver();
-		String url= "https://shop.demoqa.com/my-account/";
+		String url= "https://shop.demoqa.com/ ";
 		driver.get(url);
 	}
 	@BeforeMethod
 	 public void pageobject() {
-	sampleAlert = new SampleAlert();
+		Search = new PostTestAdd();
 	}
 	
 	@Test
-	public void testAlertOne() {
-		scroll(700);
-		sampleAlert.clickMe();
-		delay(2);
-//		driver.switchTo().alert().accept();
-		String txtAlert = driver.switchTo().alert().getText();
-		delay(1);
-		driver.switchTo().alert().dismiss();
-		System.out.println(sampleAlert.getTXTConfirmResult());
-		System.out.println(txtAlert);
-		String txt = sampleAlert.getTXTConfirmResult();
-		assertTrue(txt.contains("Cancel"));
-}
-	
-	@Test
-	public void testAlertTwo() {
-		scroll(700); 
-		sampleAlert.clickMeTwo();
-		delay(1);
-		driver.switchTo().alert().sendKeys("Test");
-		String txtAlert = driver.switchTo().alert().getText();
-		delay(1);
-		driver.switchTo().alert().accept();
-		System.out.println(sampleAlert.getTXTPromptResult());
-		System.out.println(txtAlert);
-		String txt = sampleAlert.getTXTPromptResult();
-		assertTrue(txt .contains("Test"));
-	
+	public void testSearch() {
+		Search.search();
+		Search.searchInput();
+		Search.wishlist();
+		Search.wishlistTwo();
+		scroll(400);
+		Search.wishlistList();
+		Search.getTxtBlackOne();
+		Search.getTxtBlackTwo();
+		
 	}
+	
 	
 	@AfterClass
 	public void closeBrowser() {
@@ -67,7 +55,7 @@ public class TestSearch {
 	}
 	static void delay(int detik) {
 		try {
-			Thread.sleep(1000 * detik);
+			Thread.sleep(1000*detik);
 		} catch (InterruptedException e) {
 			// TODO: handle exception
 		e.printStackTrace();
@@ -77,8 +65,6 @@ public class TestSearch {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,700)");
 	}
-}
-	
-	
+
 	
 }
