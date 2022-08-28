@@ -9,6 +9,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.juaracoding.pageoject.drivers.Drivers.DriverSingelton;
+
+import io.cucumber.java.en.Given;
+
 import com.juaracoding.pageobject.pages.LoginPagee;
 
 public class TestLogin {
@@ -47,6 +50,16 @@ public class TestLogin {
 		delay(3);
 		driver.quit();
 	}
+	
+	@Given("User go to Web HRM")
+	
+	
+	
+	
+	
+	
+	
+	
 	static void delay(int detik) {
 		try {
 			Thread.sleep(1000*detik);

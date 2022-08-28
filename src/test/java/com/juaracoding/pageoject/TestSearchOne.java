@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.juaracoding.pageobject.Postest18.PostTestAdd;
 import com.juaracoding.pageobject.Postest18.PostTestSearch;
 import com.juaracoding.pageoject.drivers.Drivers.DriverSingelton;
 
