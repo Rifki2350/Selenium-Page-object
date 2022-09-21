@@ -1,73 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-28T13:21:33 SGT" name="Default suite" finished-at="2022-08-28T13:22:21 SGT" duration-ms="47877">
+  <suite started-at="2022-09-21T23:09:13 SGT" name="Default suite" finished-at="2022-09-21T23:09:14 SGT" duration-ms="464">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.Ujian56.TestRunnerUjian@61df66b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-08-28T13:21:33 SGT" name="Default test" finished-at="2022-08-28T13:22:21 SGT" duration-ms="47877">
-      <class name="com.juaracoding.TestUjian4.TestUjian4">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.juaracoding.TestUjian4.TestUjian4@6580cfdd]" started-at="2022-08-28T13:21:33 SGT" name="setUp" finished-at="2022-08-28T13:21:45 SGT" duration-ms="11954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageObjectTwo()[pri:0, instance:com.juaracoding.TestUjian4.TestUjian4@6580cfdd]" started-at="2022-08-28T13:21:45 SGT" name="pageObjectTwo" finished-at="2022-08-28T13:21:45 SGT" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageObjectTwo -->
-        <test-method signature="testUjian4()[pri:0, instance:com.juaracoding.TestUjian4.TestUjian4@6580cfdd]" started-at="2022-08-28T13:21:45 SGT" name="testUjian4" finished-at="2022-08-28T13:22:16 SGT" duration-ms="31625" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+    <test started-at="2022-09-21T23:09:13 SGT" name="Default test" finished-at="2022-09-21T23:09:14 SGT" duration-ms="464">
+      <class name="com.juaracoding.Ujian56.TestRunnerUjian">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.Ujian56.TestRunnerUjian@61df66b6]" started-at="2022-09-21T23:09:13 SGT" name="setUpClass" finished-at="2022-09-21T23:09:14 SGT" duration-ms="364" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@446293d]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression .compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '.compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485']' is not a valid XPath expression.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-R9SJ9U0', ip: '20.20.20.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b4bce9b8a23b6e6c6847c64487774c5
-*** Element info: {Using=xpath, value=.compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485']}]]>
+              <![CDATA[path must exist: C:\com.juaracoding.pageoject\src\test\resources\features\LoginUjian.feature]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '.compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485']' is not a valid XPath expression.
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-R9SJ9U0', ip: '20.20.20.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:2527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1b4bce9b8a23b6e6c6847c64487774c5
-*** Element info: {Using=xpath, value=.compare.button[href='https://shop.demoqa.com?action=yith-woocompare-add-product&id=1485']}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at com.juaracoding.pageobject.Ujian4.Ujian4.CompareOne(Ujian4.java:173)
-at com.juaracoding.TestUjian4.TestUjian4.testUjian4(TestUjian4.java:60)
+              <![CDATA[java.lang.IllegalArgumentException: path must exist: C:\com.juaracoding.pageoject\src\test\resources\features\LoginUjian.feature
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -86,15 +58,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUjian4 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.juaracoding.TestUjian4.TestUjian4@6580cfdd]" started-at="2022-08-28T13:22:16 SGT" name="closeBrowser" finished-at="2022-08-28T13:22:21 SGT" duration-ms="4079" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.Ujian56.TestRunnerUjian@61df66b6]" started-at="2022-09-21T23:09:14 SGT" name="tearDownClass" finished-at="2022-09-21T23:09:14 SGT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.juaracoding.TestUjian4.TestUjian4 -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.juaracoding.Ujian56.TestRunnerUjian -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -34,7 +34,9 @@ public class DriverSingelton {
 		return driver;
 		
 	}
-
+	public static void CloseObjectInstance() {
+		driver.close();
+	}
 	public static void getInstace(String string) {
 		// TODO Auto-generated method stub
 		
