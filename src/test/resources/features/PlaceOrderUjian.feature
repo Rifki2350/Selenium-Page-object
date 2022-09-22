@@ -1,4 +1,4 @@
-Feature : PlaceOrder shop
+Feature: PlaceOrder shop
 
 	Scenario: User checkout
 	When User input data

@@ -1,4 +1,4 @@
-Feature : Select Item shop
+Feature: Select Item shop
 
 	Scenario: User Add item
 	When User go to web shop
